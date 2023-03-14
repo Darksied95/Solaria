@@ -8,11 +8,12 @@ module.exports = {
     extend: {
       colors: {
         primary: "#7c7b79",
-        svgColor: "#171934",
-        focus: "#eee6e1"
+        svgColor: "#171934"
       },
       backgroundColor: {
-        primary: "#fbf7f4"
+        primary: "#fbf7f4",
+        focus: "#eee6e1",
+
       }
     },
   },

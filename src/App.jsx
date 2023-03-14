@@ -3,7 +3,7 @@ import FirstPanel from "./components/FirstPanel";
 
 const App = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary min-h-screen">
       <FirstPanel />
     </div>
   );
