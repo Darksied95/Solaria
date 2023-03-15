@@ -64,7 +64,7 @@ const ThirdPanel = () => {
   ];
 
   return (
-    <div className="w-[500px] outline">
+    <div className="w-[500px]">
       <div className="flex justify-between">
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
         <p>View all</p>
