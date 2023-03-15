@@ -73,4 +73,4 @@ const FirstPanel = () => {
   );
 };
 
-export default FirstPane;
+export default FirstPanel;
