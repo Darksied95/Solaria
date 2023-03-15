@@ -38,25 +38,25 @@ const ThirdPanel = () => {
       heading: "Viruses",
       progress: "96",
       Icon: BsVirus,
-      color: "",
+      color: "#627697",
     },
     {
       heading: "Bacterial cells",
       progress: "33",
       Icon: FaDna,
-      color: "",
+      color: "#f5bf92",
     },
     {
       heading: "Med Science",
       progress: "7",
       Icon: AiFillMedicineBox,
-      color: "",
+      color: "#e3b2b7",
     },
     {
-      heading: "Viruses",
+      heading: "Human gens",
       progress: "58",
       Icon: GiHumanPyramid,
-      color: "",
+      color: "#9dafb4",
     },
   ];
 
