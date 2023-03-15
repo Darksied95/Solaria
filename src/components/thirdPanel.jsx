@@ -64,8 +64,8 @@ const ThirdPanel = () => {
   ];
 
   return (
-    <div className="w-[500px]">
-      <div className="flex justify-between">
+    <div className="w-[35%] mt-9 ml-10">
+      <div className="flex justify-between mb-8">
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
         <p>View all</p>
       </div>
@@ -74,7 +74,7 @@ const ThirdPanel = () => {
           let { subHeading, time, Icon, iconColor, heading, text } = each;
 
           return (
-            <div key={index} className="border border-black mb-4 p-4">
+            <div key={index} className="border border-black/10 mb-4 p-4">
               <div className="flex justify-between">
                 <h2 className="mb-1">{subHeading}</h2>
                 <span>{time}</span>

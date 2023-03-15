@@ -21,7 +21,7 @@ const FirstPanel = () => {
     },
   ];
   return (
-    <div className="w-[350px]  outline flex flex-col px-12 pt-10 h-screen">
+    <div className="w-[20%] flex flex-col px-12 pt-10 h-full">
       <div className="mb-10">
         <TbBrandMercedes size={40} className="mx-auto" />
         <h2 className="font-bold text-3xl uppercase text-center">solarius</h2>
@@ -58,7 +58,7 @@ const FirstPanel = () => {
         </div>
 
         <button className="flex items-center gap-3 font-bold text-xl mb-4 w-full p-3">
-          <IoIosSettings />
+          <IoIosSettings size={23} />
           <p>Settings</p>
         </button>
       </div>

@@ -6,20 +6,20 @@ import { AiFillClockCircle, AiFillCheckCircle } from "react-icons/ai";
 
 const SecondPanel = () => {
   return (
-    <div className="h-full bg-white w-[500px] px-10 py-8">
+    <div className="h-full bg-white w-[35%] px-10 py-8 ">
       <div className="flex justify-between items-center mb-7">
         <h1 className="font-semibold text-2xl">
           Today's Plan <br />
-          <span className="text-lg text-black/50">June 14th 2022</span>
+          <span className="text-base opacity-50">June 14th, 2022</span>
         </h1>
         <span className="pt-2 pb-3 px-4  bg-black text-white rounded-[50%] text-2xl">
           +
         </span>
       </div>
-      <p className="font-bold text-xl mb-5">
+      <p className="font-bold text-2xl mb-5">
         Sustainable development goals and health innovation
       </p>
-      <div className="flex justify-between mb-5">
+      <div className="flex justify-between mb-8">
         <div className="flex items-center">
           <img
             src={Person1}
@@ -39,13 +39,13 @@ const SecondPanel = () => {
         </div>
 
         <div className="border-l-2 pl-6">
-          <h3 className="font-bold">Medi Team meeting</h3>
+          <h3 className="font-semibold">Medi Team meeting</h3>
           <p className="text-black/30 font-bold">13:30 - 14:50</p>
         </div>
       </div>
       <div>
-        <div className="bg-pexel1 h-60 bg-[center right] p-6 flex flex-col items-start mb-5">
-          <h4 className="font-bold text-2xl mb-2">Weekly report</h4>
+        <div className="bg-pexel1 h-[350px] bg-[center right] p-6 flex flex-col items-start mb-10">
+          <h4 className="font-semibold text-2xl mb-2">Weekly report</h4>
           <p className="font-semibold text-black/40">Track your performance</p>
           <button className="border-2 border-black font-bold text-xs uppercase p-2 px-4 mt-auto">
             view report
@@ -53,18 +53,18 @@ const SecondPanel = () => {
         </div>
 
         <div className="flex gap-8 h-full">
-          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[250px]">
-            <h4 className="font-bold mb-2 text-lg">Study 78X</h4>
+          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[350px]">
+            <h4 className="font-bold mb-2 text-xl">Study 78X</h4>
             <div className="flex items-center gap-2">
-              <AiFillClockCircle />
-              <p>In progress</p>
+              <AiFillClockCircle size={20} />
+              <p className="font-semibold opacity-50">In progress</p>
             </div>
           </div>
-          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[250px]">
-            <h4 className="font-bold mb-2 text-lg">Analyses</h4>
+          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[350px]">
+            <h4 className="font-bold mb-2 text-xl">Analyses</h4>
             <div className="flex items-center gap-2">
-              <AiFillCheckCircle />
-              <p>Completed</p>
+              <AiFillCheckCircle size={20} />
+              <p className="font-semibold opacity-50">Completed</p>
             </div>{" "}
           </div>
         </div>
