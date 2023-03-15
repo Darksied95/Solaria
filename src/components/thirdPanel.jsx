@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillCheckCircle, AiFillMedicineBox } from "react-icons/ai";
 import { FaDna } from "react-icons/fa";
 import { BsVirus } from "react-icons/bs";
-import { GiHumanTarget } from "react-icons/gi";
+import { GiHumanTarget, GiTripleScratches } from "react-icons/gi";
 import { FiMoreHorizontal } from "react-icons/fi";
 
 const ThirdPanel = () => {
@@ -52,7 +52,7 @@ const ThirdPanel = () => {
     {
       heading: "Med Science",
       progress: "7",
-      Icon: AiFillMedicineBox,
+      Icon: GiTripleScratches,
       color: (alpha) => `rgba(223, 172, 176, ${alpha || 255})`,
     },
     {

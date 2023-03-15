@@ -1,10 +1,10 @@
 import React from "react";
-import ThirdPanel from "./components/ThirdPanel";
+import FourthPanel from "./components/FourthPanel";
 
 const App = () => {
   return (
     <div className="bg-primary h-screen">
-      <ThirdPanel />
+      <FourthPanel />
     </div>
   );
 };
