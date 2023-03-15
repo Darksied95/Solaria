@@ -43,8 +43,8 @@ const FirstPanel = () => {
             <BiChevronDown className="ml-auto" />
           </button>
           <div className="ml-12">
-            {resources.map((resource) => (
-              <div className="flex items-center gap-4 mb-4">
+            {resources.map((resource, index) => (
+              <div key={index} className="flex items-center gap-4 mb-4">
                 <span
                   className={`w-3  rounded-sm aspect-square`}
                   style={{ backgroundColor: resource.color }}

@@ -1,28 +1,32 @@
 import React from "react";
 import Doctor from "../assets/doctor.jpg";
 import { RiMessage2Fill } from "react-icons/ri";
-import { SiNotepadplusplus } from "react-icons/si";
+import { BsFillPencilFill } from "react-icons/bs";
 
 const FourthPanel = () => {
   return (
-    <div className="border-l ">
-      <div>
-        <div className="relative w-fit">
+    <div className="border-l h-full flex flex-col  justify-between py-10  ml-11 mb-16 ">
+      <div className="w-fit ">
+        <div className="relative">
           <img
             src={Doctor}
-            className="w-12 aspect-square object-cover  rounded-full"
+            className="w-12 aspect-square object-cover rounded-full mx-auto mb-3"
           />
-          <span className="block rounded-full aspect-square w-3 bg-green-400 border-2 border-white absolute top-2 right-0"></span>
+          <span className="block rounded-full aspect-square w-3 bg-green-400 border-2 border-white absolute top-1 right-2"></span>
         </div>
-        <h1>Dr. Riddle</h1>
+        <h1 className="font-bold text-sm">Dr. Riddle</h1>
         <p>Scientist</p>
       </div>
       <div>
-        <SiNotepadplusplus />
-        <RiMessage2Fill />
-        <span>
-          <p>+</p>
-        </span>
+        <div className="w-9 aspect-square bg-white mb-4  rounded-full grid place-content-center">
+          <BsFillPencilFill />
+        </div>
+        <div className="w-9 aspect-square bg-white mb-4 rounded-full grid place-content-center">
+          <RiMessage2Fill />
+        </div>
+        <p className="w-9 aspect-square bg-black text-white mb-4 rounded-full grid place-content-center text-xl font-bold">
+          <span className="-mt-1 ">+</span>
+        </p>
       </div>
     </div>
   );
