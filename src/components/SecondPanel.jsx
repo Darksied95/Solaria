@@ -6,8 +6,8 @@ import { AiFillClockCircle, AiFillCheckCircle } from "react-icons/ai";
 
 const SecondPanel = () => {
   return (
-    <div className="h-full bg-white w-[500px] px-10">
-      <div className="flex justify-between items-center mb-10">
+    <div className="h-full bg-white w-[500px] px-10 py-8">
+      <div className="flex justify-between items-center mb-7">
         <h1 className="font-semibold text-2xl">
           Today's Plan <br />
           <span className="text-lg text-black/50">June 14th 2022</span>
@@ -16,10 +16,10 @@ const SecondPanel = () => {
           +
         </span>
       </div>
-      <p className="font-bold text-2xl">
+      <p className="font-bold text-xl mb-5">
         Sustainable development goals and health innovation
       </p>
-      <div className="flex justify-between">
+      <div className="flex justify-between mb-5">
         <div className="flex items-center">
           <img
             src={Person1}
@@ -44,7 +44,7 @@ const SecondPanel = () => {
         </div>
       </div>
       <div>
-        <div className="bg-pexel1 h-64 bg-[center right] p-6 flex flex-col items-start ">
+        <div className="bg-pexel1 h-60 bg-[center right] p-6 flex flex-col items-start mb-5">
           <h4 className="font-bold text-2xl mb-2">Weekly report</h4>
           <p className="font-semibold text-black/40">Track your performance</p>
           <button className="border-2 border-black font-bold text-xs uppercase p-2 px-4 mt-auto">
@@ -52,16 +52,20 @@ const SecondPanel = () => {
           </button>
         </div>
 
-        <div className="flex outline gap-8 h-[300px]">
-          <div className="bg-pexel2 h-full bg-cover w-1/2">
-            <h4>Study 78X</h4>
-            <AiFillClockCircle />
-            <p>In progress</p>
+        <div className="flex gap-8 h-full">
+          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[250px]">
+            <h4 className="font-bold mb-2 text-lg">Study 78X</h4>
+            <div className="flex items-center gap-2">
+              <AiFillClockCircle />
+              <p>In progress</p>
+            </div>
           </div>
-          <div className="bg-pexel3 w-1/2 bg-cover">
-            <h4>Analyses</h4>
-            <AiFillCheckCircle />
-            <p>Completed</p>
+          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[250px]">
+            <h4 className="font-bold mb-2 text-lg">Analyses</h4>
+            <div className="flex items-center gap-2">
+              <AiFillCheckCircle />
+              <p>Completed</p>
+            </div>{" "}
           </div>
         </div>
       </div>

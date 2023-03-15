@@ -3,7 +3,7 @@ import SecondPanel from "./components/SecondPanel";
 
 const App = () => {
   return (
-    <div className="bg-primary min-h-screen">
+    <div className="bg-primary h-screen">
       <SecondPanel />
     </div>
   );
