@@ -64,17 +64,25 @@ const ThirdPanel = () => {
   ];
 
   return (
-    <div className="w-[35%] mt-9 ml-10">
+    <div className="w-[35%] mt-9 ml-10 flex flex-col">
       <div className="flex justify-between mb-8">
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
         <p>View all</p>
       </div>
-      <div>
+      <div className="mb-10">
         {pinnedCardDetails.map((each, index) => {
-          let { subHeading, time, Icon, iconColor, heading, text } = each;
+          let {
+            subHeading,
+            time,
+            Icon,
+            backgroundColor,
+            color,
+            heading,
+            text,
+          } = each;
 
           return (
-            <div key={index} className="border border-black/10 mb-4 p-4">
+            <div key={index} className="border border-black/10  p-4">
               <div className="flex justify-between">
                 <h2 className="mb-1">{subHeading}</h2>
                 <span>{time}</span>
@@ -85,14 +93,14 @@ const ThirdPanel = () => {
                   <p
                     className={` text-xs w-4 text-center rounded-full aspect-square font-bold`}
                     style={{
-                      backgroundColor: each.backgroundColor,
-                      color: each.color,
+                      backgroundColor: backgroundColor,
+                      color: color,
                     }}
                   >
                     {Icon}
                   </p>
                 ) : (
-                  <Icon color={each.backgroundColor} fontSize={18} />
+                  <Icon color={backgroundColor} fontSize={18} />
                 )}
                 <p>{text}</p>
               </div>
@@ -100,8 +108,8 @@ const ThirdPanel = () => {
           );
         })}
       </div>
-      <div className="flex justify-between mb-4">
-        <p className="font-semibold text-lg leading-none">
+      <div className="flex justify-between mb-4 ">
+        <p className="font-semibold text-lg leading-7">
           My learnings <br />
           <span className="opacity-70 text-xs font-normal">
             Your progress of medical lectures
@@ -110,20 +118,22 @@ const ThirdPanel = () => {
         <FiMoreHorizontal />
       </div>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 ">
         {medicalLecturesProgress.map((each, index) => {
           const Icon = each.Icon;
           return (
             <div key={index} className="w-[40%] flex items-center ">
               <div
-                className="aspect-square h-8 grid place-content-center "
+                className="aspect-square h-12 grid place-content-center "
                 style={{ backgroundColor: each.color(0.15) }}
               >
-                <Icon color={each.color()} fontSize={16} />
+                <Icon color={each.color()} fontSize={20} />
               </div>
               <div className="ml-3">
                 <h2 className="font-bold text-sm ">{each.heading}</h2>
-                <p className="text-xs">{each.progress}% progress</p>
+                <p className="text-xs font-semibold opacity-40">
+                  {each.progress}% progress
+                </p>
               </div>
             </div>
           );

@@ -5,7 +5,7 @@ import { BsFillPencilFill } from "react-icons/bs";
 
 const FourthPanel = () => {
   return (
-    <div className="border-l h-full flex flex-col  justify-between py-10  ml-11 mb-16 w-[10%]">
+    <div className="border-l h-full flex flex-col  justify-between py-4  ml-11 mb-16 w-[10%]">
       <div>
         <div className="relative mx-auto w-fit">
           <img
@@ -17,7 +17,7 @@ const FourthPanel = () => {
         <h1 className="font-bold text-sm text-center">Dr. Riddle</h1>
         <p className="text-center">Scientist</p>
       </div>
-      <div>
+      <div className="mx-auto">
         <div className="w-9 aspect-square bg-white mb-4  rounded-full grid place-content-center">
           <BsFillPencilFill />
         </div>
