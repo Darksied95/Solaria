@@ -12,7 +12,7 @@ const SecondPanel = () => {
           Today's Plan <br />
           <span className="text-base opacity-50">June 14th, 2022</span>
         </h1>
-        <span className="pt-2 pb-3 px-4  bg-black text-white rounded-[50%] text-2xl">
+        <span className="pt-2 pb-3 px-4  bg-black text-white rounded-[50%] text-2xl cursor-pointer">
           +
         </span>
       </div>

@@ -18,13 +18,13 @@ const FourthPanel = () => {
         <p className="text-center">Scientist</p>
       </div>
       <div className="mx-auto">
-        <div className="w-9 aspect-square bg-white mb-4  rounded-full grid place-content-center">
+        <div className="w-9 aspect-square bg-white mb-4  rounded-full grid place-content-center  cursor-pointer">
           <BsFillPencilFill />
         </div>
-        <div className="w-9 aspect-square bg-white mb-4 rounded-full grid place-content-center">
+        <div className="w-9 aspect-square bg-white mb-4 rounded-full grid place-content-center cursor-pointer">
           <RiMessage2Fill />
         </div>
-        <p className="w-9 aspect-square bg-black text-white mb-4 rounded-full grid place-content-center text-xl font-bold">
+        <p className="w-9 aspect-square bg-black text-white mb-4 rounded-full grid place-content-center text-xl font-bold cursor-pointer">
           <span className="-mt-1 ">+</span>
         </p>
       </div>

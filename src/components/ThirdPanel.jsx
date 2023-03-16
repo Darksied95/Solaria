@@ -67,7 +67,7 @@ const ThirdPanel = () => {
     <div className="w-[35%] mt-9 ml-10 flex flex-col">
       <div className="flex justify-between mb-8">
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
-        <p>View all</p>
+        <p className="cursor-pointer hover:border-b border-red-500">View all</p>
       </div>
       <div className="mb-5">
         {pinnedCardDetails.map((each, index) => {
@@ -115,7 +115,7 @@ const ThirdPanel = () => {
             Your progress of medical lectures
           </span>
         </p>
-        <FiMoreHorizontal />
+        <FiMoreHorizontal cursor={"pointer"} />
       </div>
 
       <div className="flex flex-wrap gap-4 ">
