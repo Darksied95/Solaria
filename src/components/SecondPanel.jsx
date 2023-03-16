@@ -47,20 +47,20 @@ const SecondPanel = () => {
         <div className="bg-pexel1 h-[180px] bg-[center right] p-6 flex flex-col items-start mb-10">
           <h4 className="font-semibold text-2xl mb-2">Weekly report</h4>
           <p className="font-semibold text-black/40">Track your performance</p>
-          <button className="border-2 border-black font-bold text-xs uppercase p-2 px-4 mt-auto">
+          <button className="border-2 border-black/20 font-bold text-xs uppercase p-2 px-4 mt-auto">
             view report
           </button>
         </div>
 
         <div className="flex gap-8 h-full">
-          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[240px]">
+          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[250px]">
             <h4 className="font-bold mb-2 text-xl">Study 78X</h4>
             <div className="flex items-center gap-2">
               <AiFillClockCircle size={20} />
               <p className="font-semibold opacity-50">In progress</p>
             </div>
           </div>
-          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[240px]">
+          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[250px]">
             <h4 className="font-bold mb-2 text-xl">Analyses</h4>
             <div className="flex items-center gap-2">
               <AiFillCheckCircle size={20} />

@@ -69,7 +69,7 @@ const ThirdPanel = () => {
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
         <p>View all</p>
       </div>
-      <div className="mb-10">
+      <div className="mb-5">
         {pinnedCardDetails.map((each, index) => {
           let {
             subHeading,
@@ -82,10 +82,10 @@ const ThirdPanel = () => {
           } = each;
 
           return (
-            <div key={index} className="border border-black/10  p-4">
+            <div key={index} className="border border-black/10  p-4 mb-3">
               <div className="flex justify-between">
                 <h2 className="mb-1">{subHeading}</h2>
-                <span>{time}</span>
+                <span className="opacity-50">{time}</span>
               </div>
               <h1 className="font-bold max-w-[70%] mb-3">{heading}</h1>
               <div className="flex items-center  gap-2">
