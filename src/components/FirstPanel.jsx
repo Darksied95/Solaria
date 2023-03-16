@@ -27,17 +27,17 @@ const FirstPanel = () => {
         <h2 className="font-bold text-3xl uppercase text-center">solarius</h2>
       </div>
       <div>
-        <button className="flex items-center gap-3 font-bold text-xl p-3 mb-4 w-full  bg-focus">
+        <button className="flex items-center gap-3 font-bold text-lg p-3 mb-4 w-full  bg-focus">
           <MdOutlineBarChart />
           <p>Dashboard</p>
         </button>
-        <button className="flex items-center gap-3 font-bold text-xl mb-4 w-full p-3">
+        <button className="flex items-center gap-3 font-bold text-lg mb-4 w-full p-3">
           <TbChartBubbleFilled />
           <p>Education</p>
         </button>
 
         <div>
-          <button className="flex items-center gap-3 font-bold text-xl mb-4 w-full p-3">
+          <button className="flex items-center gap-3 font-bold text-lg mb-4 w-full p-3">
             <IoIosCopy />
             <p>Resources</p>
             <BiChevronDown className="ml-auto" />
@@ -57,14 +57,14 @@ const FirstPanel = () => {
           </div>
         </div>
 
-        <button className="flex items-center gap-3 font-bold text-xl mb-4 w-full p-3">
+        <button className="flex items-center gap-3 font-bold text-lg mb-4 w-full p-3">
           <IoIosSettings size={23} />
           <p>Settings</p>
         </button>
       </div>
 
-      <button className="flex items-center gap-3 font-bold text-xl mb-4 w-full p-3 mt-auto">
-        <div className="bg-black p-3 rounded-full">
+      <button className="flex items-center gap-3 font-bold text-lg mb-4 w-full p-3 mt-auto">
+        <div className="bg-black p-2 rounded-full">
           <FiLogOut color="white" />
         </div>
         <p>Log out</p>
