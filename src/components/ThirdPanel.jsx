@@ -2,7 +2,6 @@ import React from "react";
 import { FiMoreHorizontal } from "react-icons/fi";
 import MedicalLectureProgressDetails from "./MedicalLectureProgressDetails";
 import PinnedCardDetails from "./PinnedCardDetails";
-impo;
 
 const ThirdPanel = () => {
   return (

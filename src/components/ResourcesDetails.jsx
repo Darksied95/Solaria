@@ -1,7 +1,7 @@
 import React from "react";
 import resources from "../data/firstPanel";
 
-const Resources = () => {
+const ResourcesDetails = () => {
   return (
     <div className="ml-12">
       {resources.map((resource, index) => (
@@ -19,4 +19,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default ResourcesDetails;

@@ -4,7 +4,7 @@ import { TbChartBubbleFilled, TbBrandMercedes } from "react-icons/tb";
 import { IoIosCopy, IoIosSettings } from "react-icons/io";
 import { BiChevronDown } from "react-icons/bi";
 import { FiLogOut } from "react-icons/fi";
-import Resources from "./Resources";
+import ResourcesDetails from "./ResourcesDetails";
 
 const FirstPanel = () => {
   return (
@@ -31,7 +31,7 @@ const FirstPanel = () => {
             <BiChevronDown className="ml-auto" />
           </button>
 
-          <Resources />
+          <ResourcesDetails />
         </div>
 
         <button className="flex items-center gap-3 font-bold text-lg mb-4 w-full p-3">
