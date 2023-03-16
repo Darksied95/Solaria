@@ -53,14 +53,14 @@ const SecondPanel = () => {
         </div>
 
         <div className="flex gap-8 h-full">
-          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[250px]">
+          <div className="bg-pexel2 bg-cover flex-1  pt-6 pl-7 h-[240px]">
             <h4 className="font-bold mb-2 text-xl">Study 78X</h4>
             <div className="flex items-center gap-2">
               <AiFillClockCircle size={20} />
               <p className="font-semibold opacity-50">In progress</p>
             </div>
           </div>
-          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[250px]">
+          <div className="bg-pexel3 bg-cover flex-1 pt-6 pl-7 h-[240px]">
             <h4 className="font-bold mb-2 text-xl">Analyses</h4>
             <div className="flex items-center gap-2">
               <AiFillCheckCircle size={20} />
