@@ -23,10 +23,8 @@ module.exports = {
         "person2": "url('/src/assets/person2.jpg')",
         "person3": "url('/src/assets/person3.jpg')",
       },
-      theme: {
-        screen: {
-          'lg': '1208px'
-        }
+      screens: {
+        'lg': '1208px'
       }
     },
   },

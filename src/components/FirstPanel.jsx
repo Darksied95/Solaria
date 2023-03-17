@@ -52,7 +52,11 @@ const FirstPanel = () => {
       <div className="relative ">
         <SideBar showSideBar={showSideBar} closeSideBar={closeSideBar} />
         <div className="mb-5 flex justify-between mx-5 lg:hidden">
-          <h2 className=" font-bold text-3xl uppercase text-center">
+          <h2
+            className={`${
+              heading === "solarius" ? "Solarius" : null
+            }  font-bold text-3xl uppercase text-center`}
+          >
             {heading}
           </h2>
           <FiMoreHorizontal
@@ -66,7 +70,6 @@ const FirstPanel = () => {
         <div className="mb-10">
           <TbBrandMercedes size={40} className="mx-auto" />
           <h2
-            name="Solarius"
             className={`${
               heading === "solarius" ? "Solarius" : null
             }  font-bold text-3xl uppercase text-center`}
