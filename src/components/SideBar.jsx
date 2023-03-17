@@ -6,21 +6,14 @@ import { BiChevronDown } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import ResourcesDetails from "./ResourcesDetails";
 import Button from "./Button";
+import {
+  handleBackgroundChange,
+  handleButtonClick,
+} from "../utils/ButtonHandler";
 
 const SideBar = ({ showSideBar, closeSideBar }) => {
   const [focus, setFocus] = React.useState("dashboard");
   const [showResources, setShowResources] = React.useState(false);
-
-  const handleBackgroundChange = (name) => {
-    return focus === name ? "rgb(238 230 225 " : null;
-  };
-
-  const handleButtonClick = (name) => {
-    if (name == "resources") {
-      setShowResources(!showResources);
-    }
-    setFocus(name);
-  };
 
   const buttonStyle = "flex items-center gap-3 font-bold text-xl p-3  w-full";
 
@@ -35,6 +28,9 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
         <CgClose size={40} onClick={closeSideBar} className="cursor-pointer" />
       </div>
       <Button
+        focusValue={focus}
+        setFocus={setFocus}
+        setShowResources={setShowResources}
         className={buttonStyle}
         name="dashboard"
         handleButtonClick={handleButtonClick}
@@ -45,6 +41,9 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
       </Button>
 
       <Button
+        focusValue={focus}
+        setFocus={setFocus}
+        setShowResources={setShowResources}
         className={buttonStyle}
         name="education"
         handleButtonClick={handleButtonClick}
@@ -56,6 +55,9 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
 
       <div className="w-full">
         <Button
+          focusValue={focus}
+          setFocus={setFocus}
+          setShowResources={setShowResources}
           className={buttonStyle}
           name="resources"
           handleButtonClick={handleButtonClick}
@@ -73,6 +75,9 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
       </div>
 
       <Button
+        focusValue={focus}
+        setFocus={setFocus}
+        setShowResources={setShowResources}
         className={buttonStyle}
         name="settings"
         handleButtonClick={handleButtonClick}

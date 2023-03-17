@@ -3,29 +3,19 @@ import { MdOutlineBarChart } from "react-icons/md";
 import { TbChartBubbleFilled, TbBrandMercedes } from "react-icons/tb";
 import { IoIosCopy, IoIosSettings } from "react-icons/io";
 import { BiChevronDown } from "react-icons/bi";
-import { FiLogOut } from "react-icons/fi";
-import { FiMoreHorizontal } from "react-icons/fi";
+import { FiLogOut, FiMoreHorizontal } from "react-icons/fi";
 import ResourcesDetails from "./ResourcesDetails";
 import SideBar from "./SideBar";
 import Button from "./Button";
+import {
+  handleBackgroundChange,
+  handleButtonClick,
+} from "../utils/ButtonHandler";
 
 const FirstPanel = () => {
   const [showSideBar, setShowSideBar] = useState(false);
-  const [focus, setFocus] = React.useState("dashboard");
-  const [showResources, setShowResources] = React.useState(false);
-
-  const handleBackgroundChange = (name) => {
-    return focus === name ? "rgb(238 230 225 " : null;
-  };
-
-  const handleButtonClick = (name) => {
-    if (name == "resources") {
-      setShowResources(!showResources);
-    } else {
-      setShowResources(false);
-    }
-    setFocus(name);
-  };
+  const [focus, setFocus] = useState("dashboard");
+  const [showResources, setShowResources] = useState(false);
 
   const closeSideBar = () => {
     setShowSideBar(false);
@@ -57,17 +47,24 @@ const FirstPanel = () => {
         </div>
         <div>
           <Button
-            className={buttonStyle}
             name="dashboard"
+            className={buttonStyle}
+            focusValue={focus}
+            setFocus={setFocus}
+            setShowResources={setShowResources}
             handleBackgroundChange={handleBackgroundChange}
             handleButtonClick={handleButtonClick}
           >
             <MdOutlineBarChart />
             <p>Dashboard</p>
           </Button>
+
           <Button
-            className={buttonStyle}
             name="education"
+            className={buttonStyle}
+            focusValue={focus}
+            setFocus={setFocus}
+            setShowResources={setShowResources}
             handleBackgroundChange={handleBackgroundChange}
             handleButtonClick={handleButtonClick}
           >
@@ -77,33 +74,39 @@ const FirstPanel = () => {
 
           <div>
             <Button
-              className={buttonStyle}
               name="resources"
+              className={buttonStyle}
+              focusValue={focus}
+              setFocus={setFocus}
+              setShowResources={setShowResources}
               handleBackgroundChange={handleBackgroundChange}
               handleButtonClick={handleButtonClick}
             >
               <IoIosCopy />
               <p>Resources</p>
               <BiChevronDown
-                className={`ml-auto ${
+                className={`ml-auto transition-all  ${
                   showResources && focus === "resources" ? "rotate-180" : ""
-                } transition-all`}
+                }`}
               />
             </Button>
-
             {showResources && focus === "resources" && <ResourcesDetails />}
           </div>
 
           <Button
-            className={buttonStyle}
             name="settings"
-            handleBackgroundChange={handleBackgroundChange}
+            className={buttonStyle}
+            focusValue={focus}
+            setFocus={setFocus}
+            setShowResources={setShowResources}
             handleButtonClick={handleButtonClick}
+            handleBackgroundChange={handleBackgroundChange}
           >
             <IoIosSettings size={23} />
             <p>Settings</p>
           </Button>
         </div>
+
         <button
           className="flex items-center gap-3 font-bold text-lg mb-10 w-full p-3 mt-auto"
           onClick={() => window.close()}

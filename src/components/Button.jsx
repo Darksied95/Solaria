@@ -6,14 +6,17 @@ const Button = ({
   handleButtonClick,
   name,
   className,
+  setFocus,
+  setShowResources,
+  focusValue,
 }) => {
   return (
     <button
       className={className}
       style={{
-        backgroundColor: handleBackgroundChange(name),
+        backgroundColor: handleBackgroundChange(name, focusValue),
       }}
-      onClick={() => handleButtonClick(name)}
+      onClick={() => handleButtonClick(name, setShowResources, setFocus)}
     >
       {children}
     </button>
