@@ -62,7 +62,7 @@ const FirstPanel = () => {
           />
         </div>
       </div>
-      <section className=" hidden w-[20%] lg:flex flex-col px-12 pt-10 h-full">
+      <section className=" hidden w-[20%] lg:flex flex-col px-12 pt-10">
         <div className="mb-10">
           <TbBrandMercedes size={40} className="mx-auto" />
           <h2
