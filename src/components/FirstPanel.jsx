@@ -24,7 +24,11 @@ const FirstPanel = () => {
         <SideBar showSideBar={showSideBar} closeSideBar={closeSideBar} />
         <div className="mb-5 flex justify-between mx-5 lg:hidden">
           <h2 className="font-bold text-3xl uppercase text-center">solarius</h2>
-          <FiMoreHorizontal size={40} onClick={openSideBar} />
+          <FiMoreHorizontal
+            className="cursor-pointer"
+            size={40}
+            onClick={openSideBar}
+          />
         </div>
       </div>
       <div className="hidden w-[20%] lg:flex flex-col px-12 pt-10 h-full">
@@ -59,7 +63,7 @@ const FirstPanel = () => {
           </button>
         </div>
 
-        <button className="flex items-center gap-3 font-bold text-lg mb-4 w-full p-3 mt-auto">
+        <button className="flex items-center gap-3 font-bold text-lg mb-10 w-full p-3 mt-auto">
           <div className="bg-black p-2 rounded-full">
             <FiLogOut color="white" />
           </div>
