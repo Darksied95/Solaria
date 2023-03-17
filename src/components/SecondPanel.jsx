@@ -44,7 +44,7 @@ const SecondPanel = () => {
         </div>
       </div>
       <div>
-        <div className="bg-pexel1 h-[280px] lg:h-[180px] bg-cover lg:bg-[center right] bg-no-repeat p-6 flex flex-col items-start mb-10">
+        <div className="bg-pexel1  h-[180px] sm:h-[280px] lg:h-[180px] sm:bg-cover lg:bg-auto bg-no-repeat p-6 flex flex-col items-start mb-10">
           <h4 className="font-semibold text-2xl mb-2">Weekly report</h4>
           <p className="font-semibold text-black/40">Track your performance</p>
           <button className="border-2 border-black/20 font-bold text-xs uppercase p-2 px-4 mt-auto">

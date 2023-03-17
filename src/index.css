@@ -8,12 +8,11 @@ body {
 
 .Solarius {
   animation: background-pan 5s linear infinite !important;
-  background: linear-gradient(to right, purple, pink, purple);
+  background: linear-gradient(to right, black, rgb(169, 165, 165), black);
   background-clip: text;
   background-size: 200%;
   --webkit-background-clip: text;
   color: transparent;
-  white-space: nowrap;
 }
 
 @keyframes background-pan {

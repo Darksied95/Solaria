@@ -8,7 +8,7 @@ const ThirdPanel = () => {
     <section className="mx-4 lg:w-[35%] mt-9 lg:ml-10 flex flex-col">
       <div className="flex justify-between mb-8">
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
-        <p className="cursor-pointer hover:border-b border-red-500">View all</p>
+        <p className="cursor-pointer hover:border-b-2 border-black">View all</p>
       </div>
       <PinnedCardDetails />
       <div className="flex justify-between mb-4 ">
