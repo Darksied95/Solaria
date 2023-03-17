@@ -53,7 +53,7 @@ const FirstPanel = () => {
         <SideBar showSideBar={showSideBar} closeSideBar={closeSideBar} />
         <div className="mb-5 flex justify-between mx-5 lg:hidden">
           <h2 className=" font-bold text-3xl uppercase text-center">
-            solarius
+            {heading}
           </h2>
           <FiMoreHorizontal
             className="cursor-pointer"
