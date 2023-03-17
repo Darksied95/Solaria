@@ -21,11 +21,10 @@ const FirstPanel = () => {
   const handleButtonClick = (name) => {
     if (name == "resources") {
       setShowResources(!showResources);
-      setFocus(name);
     } else {
       setShowResources(false);
-      setFocus(name);
     }
+    setFocus(name);
   };
 
   const closeSideBar = () => {
@@ -53,6 +52,7 @@ const FirstPanel = () => {
       <section className="hidden w-[20%] lg:flex flex-col px-12 pt-10 h-full">
         <div className="mb-10">
           <TbBrandMercedes size={40} className="mx-auto" />
+          <h2 className="font-bold text-3xl uppercase text-center">xxxxxxxx</h2>
           <h2 className="font-bold text-3xl uppercase text-center">solarius</h2>
         </div>
         <div>
