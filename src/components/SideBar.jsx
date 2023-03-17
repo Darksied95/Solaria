@@ -22,6 +22,8 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
     setFocus(name);
   };
 
+  const buttonStyle = "flex items-center gap-3 font-bold text-xl p-3  w-full";
+
   return (
     <div
       className={`bg-white fixed inset-0 z-10 flex flex-col items-center px-12 gap-8 transition-all ${
@@ -33,6 +35,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
         <CgClose size={40} onClick={closeSideBar} className="cursor-pointer" />
       </div>
       <Button
+        className={buttonStyle}
         name="dashboard"
         handleButtonClick={handleButtonClick}
         handleBackgroundChange={handleBackgroundChange}
@@ -42,6 +45,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
       </Button>
 
       <Button
+        className={buttonStyle}
         name="education"
         handleButtonClick={handleButtonClick}
         handleBackgroundChange={handleBackgroundChange}
@@ -52,6 +56,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
 
       <div className="w-full">
         <Button
+          className={buttonStyle}
           name="resources"
           handleButtonClick={handleButtonClick}
           handleBackgroundChange={handleBackgroundChange}
@@ -68,6 +73,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
       </div>
 
       <Button
+        className={buttonStyle}
         name="settings"
         handleButtonClick={handleButtonClick}
         handleBackgroundChange={handleBackgroundChange}

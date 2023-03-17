@@ -5,7 +5,7 @@ import { BsFillPencilFill } from "react-icons/bs";
 
 const FourthPanel = () => {
   return (
-    <div className=" pt-10 lg:border-l lg:h-full flex lg:flex-col mt-3 justify-between lg:pt-0 py-4 lg:ml-11 lg:mb-16 lg:w-[10%] ">
+    <section className=" pt-10 lg:border-l lg:h-full flex lg:flex-col mt-3 justify-between lg:pt-0 py-4 lg:ml-11 lg:mb-16 lg:w-[10%] ">
       <div className="flex items-center lg:block">
         <div className="relative mr-2 lg:mx-auto w-fit  ">
           <img
@@ -30,7 +30,7 @@ const FourthPanel = () => {
           <span className="-mt-1 ">+</span>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

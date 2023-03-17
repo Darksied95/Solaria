@@ -5,10 +5,11 @@ const Button = ({
   handleBackgroundChange,
   handleButtonClick,
   name,
+  className,
 }) => {
   return (
     <button
-      className="flex items-center gap-3 font-bold text-xl p-3  w-full"
+      className={className}
       style={{
         backgroundColor: handleBackgroundChange(name),
       }}

@@ -6,13 +6,13 @@ import { AiFillClockCircle, AiFillCheckCircle } from "react-icons/ai";
 
 const SecondPanel = () => {
   return (
-    <div className="h-full px-5 pt-3 bg-white lg:w-[35%] max-w-full lg:px-10 lg:pt-8 ">
+    <section className="h-full px-5 pt-3 bg-white lg:w-[35%] max-w-full lg:px-10 lg:pt-8 ">
       <div className="flex justify-between items-center mb-7">
         <h1 className="font-semibold text-2xl">
           Today's Plan <br />
           <span className="text-base opacity-50">June 14th, 2022</span>
         </h1>
-        <span className="pt-2 pb-3 px-4  bg-black text-white rounded-[50%] text-2xl cursor-pointer">
+        <span className="pt-2 pb-3 px-4  bg-black text-white rounded-[50%] text-2xl cursor-pointer hover:bg-white hover:text-black hover:outline outline-1">
           +
         </span>
       </div>
@@ -69,7 +69,7 @@ const SecondPanel = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
