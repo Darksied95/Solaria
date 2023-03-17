@@ -3,7 +3,7 @@ import resources from "../data/firstPanel";
 
 const ResourcesDetails = () => {
   return (
-    <div className="ml-12">
+    <div className="ml-12 mt-4">
       {resources.map((resource, index) => (
         <div key={index} className="flex items-center gap-4 mb-4">
           <span

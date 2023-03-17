@@ -5,7 +5,7 @@ import PinnedCardDetails from "./PinnedCardDetails";
 
 const ThirdPanel = () => {
   return (
-    <div className="w-[35%] mt-9 ml-10 flex flex-col">
+    <div className="mx-4 lg:w-[35%] mt-9 lg:ml-10 flex flex-col">
       <div className="flex justify-between mb-8">
         <h1 className="font-bold  text-lg">Monthly pinned</h1>
         <p className="cursor-pointer hover:border-b border-red-500">View all</p>

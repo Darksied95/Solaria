@@ -15,7 +15,9 @@ const MedicalLectureProgressDetails = () => {
               <Icon color={each.color()} fontSize={20} />
             </div>
             <div className="ml-3">
-              <h2 className="font-bold text-sm ">{each.heading}</h2>
+              <h2 className="font-bold text-sm leading-4 mb-2">
+                {each.heading}
+              </h2>
               <p className="text-xs font-semibold opacity-40">
                 {each.progress}% progress
               </p>
