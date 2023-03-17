@@ -60,7 +60,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
           <p>Resources</p>
           <BiChevronDown
             className={`ml-auto ${
-              focus === "resources" ? "" : "rotate-180"
+              showResources ? "rotate-180" : ""
             } transition-all`}
           />
         </Button>
