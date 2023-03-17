@@ -6,7 +6,7 @@ body {
   background-color: #ccc1be;
 }
 
-@media screen and (min-height: 900px) {
+@media (min-device-height: 900px) and (min-width: 1440px) {
   #root {
     min-height: 100vh;
     display: flex;
