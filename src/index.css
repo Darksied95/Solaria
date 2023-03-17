@@ -6,7 +6,27 @@ body {
   background-color: #ccc1be;
 }
 
-@media (min-height: 600px) and (min-width: 1000px) {
+.Solarius {
+  animation: background-pan 5s linear infinite !important;
+  background: linear-gradient(to right, purple, pink, purple);
+  background-clip: text;
+  background-size: 200%;
+  --webkit-background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+@media (min-height: 1400px) and (min-width: 1200px) {
   #root {
     min-height: 100vh;
     display: flex;

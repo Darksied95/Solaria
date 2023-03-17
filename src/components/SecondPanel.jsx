@@ -6,7 +6,7 @@ import { AiFillClockCircle, AiFillCheckCircle } from "react-icons/ai";
 
 const SecondPanel = () => {
   return (
-    <section className="h-full px-5 pt-3 bg-white lg:w-[35%] max-w-full lg:px-10 lg:pt-8 ">
+    <section className="h-full px-5 pt-3 bg-white lg:w-[35%] max-w-full lg:px-10 lg:pt-8 overflow-hidden">
       <div className="flex justify-between items-center mb-7">
         <h1 className="font-semibold text-2xl">
           Today's Plan <br />
