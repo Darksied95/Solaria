@@ -22,6 +22,11 @@ module.exports = {
         "person1": "url('/src/assets/person1.jpg')",
         "person2": "url('/src/assets/person2.jpg')",
         "person3": "url('/src/assets/person3.jpg')",
+      },
+      theme: {
+        screen: {
+          'lg': '1208px'
+        }
       }
     },
   },
