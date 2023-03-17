@@ -36,7 +36,6 @@ const FirstPanel = () => {
           <TbBrandMercedes size={40} className="mx-auto" />
           <h2 className="font-bold text-3xl uppercase text-center">solarius</h2>
         </div>
-
         <div>
           <button className="flex items-center gap-3 font-bold text-lg p-3 mb-4 w-full  bg-focus">
             <MdOutlineBarChart />
@@ -62,8 +61,10 @@ const FirstPanel = () => {
             <p>Settings</p>
           </button>
         </div>
-
-        <button className="flex items-center gap-3 font-bold text-lg mb-10 w-full p-3 mt-auto">
+        <button
+          className="flex items-center gap-3 font-bold text-lg mb-10 w-full p-3 mt-auto"
+          onClick={() => window.close()}
+        >
           <div className="bg-black p-2 rounded-full">
             <FiLogOut color="white" />
           </div>
