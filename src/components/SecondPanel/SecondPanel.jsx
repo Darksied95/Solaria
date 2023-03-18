@@ -12,9 +12,10 @@ const SecondPanel = () => {
           Today's Plan <br />
           <span className="text-base opacity-50">June 14th, 2022</span>
         </h1>
-        <span className="pt-2 pb-3 px-4  bg-black text-white rounded-[50%] text-2xl cursor-pointer hover:bg-white hover:text-black hover:outline outline-1">
-          +
-        </span>
+
+        <div className="w-12 aspect-square grid place-content-center bg-black text-white rounded-[50%] text-2xl cursor-pointer hover:bg-white hover:text-black hover:outline outline-1">
+          <span className="font-bold">+</span>
+        </div>
       </div>
       <p className="font-bold text-2xl mb-5">
         Sustainable development goals and health innovation

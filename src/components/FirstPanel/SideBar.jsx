@@ -32,7 +32,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
       <div className="flex items-center w-full justify-between mt-10">
         <div>
           <h1 className="font-bold text-2xl text-center">Dr. Riddle</h1>
-          <p className="text-center text-xl">Scientist</p>
+          <p className="text-xl">Scientist</p>
         </div>
         <CgClose size={40} onClick={closeSideBar} className="cursor-pointer" />
       </div>
