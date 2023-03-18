@@ -9,14 +9,17 @@ import { CgClose } from "react-icons/cg";
 import { FiLogOut } from "react-icons/fi";
 import ResourcesDetails from "./ResourcesDetails";
 import Button from "./Button";
-import {
-  handleBackgroundChange,
-  handleButtonClick,
-} from "../utils/ButtonHandler";
+import useNavBar from "../hooks/useNavBar";
 
 const SideBar = ({ showSideBar, closeSideBar }) => {
-  const [focus, setFocus] = React.useState("dashboard");
-  const [showResources, setShowResources] = React.useState(false);
+  const {
+    focus,
+    setFocus,
+    showResources,
+    setShowResources,
+    handleBackgroundChange,
+    handleButtonClick,
+  } = useNavBar();
 
   const buttonStyle = "flex items-center gap-3 font-bold text-xl p-3  w-full";
 
