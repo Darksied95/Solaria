@@ -7,7 +7,7 @@ import { FiLogOut, FiMoreHorizontal } from "react-icons/fi";
 import ResourcesDetails from "./ResourcesDetails";
 import SideBar from "./SideBar";
 import Button from "./Button";
-import useNavBar from "../hooks/useNavBar";
+import useNavBar from "../../hooks/useNavBar";
 
 const FirstPanel = () => {
   const [showSideBar, setShowSideBar] = useState(false);

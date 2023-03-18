@@ -9,7 +9,7 @@ import { CgClose } from "react-icons/cg";
 import { FiLogOut } from "react-icons/fi";
 import ResourcesDetails from "./ResourcesDetails";
 import Button from "./Button";
-import useNavBar from "../hooks/useNavBar";
+import useNavBar from "../../hooks/useNavBar";
 
 const SideBar = ({ showSideBar, closeSideBar }) => {
   const {

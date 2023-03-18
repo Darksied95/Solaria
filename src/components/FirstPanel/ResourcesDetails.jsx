@@ -1,5 +1,5 @@
 import React from "react";
-import resources from "../data/firstPanel";
+import resources from "..//../data/firstPanel.json";
 
 const ResourcesDetails = () => {
   return (
