@@ -1,5 +1,5 @@
 import React from "react";
-import Doctor from "../assets/doctor.jpg";
+import Doctor from "../..//assets/doctor.jpg";
 import { RiMessage2Fill } from "react-icons/ri";
 import { BsFillPencilFill } from "react-icons/bs";
 

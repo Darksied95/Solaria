@@ -1,5 +1,5 @@
 import React from "react";
-import { pinnedCardDetails } from "../data/thirdPanel";
+import { pinnedCardDetails } from "../../data/thirdPanel";
 
 const PinnedCardDetails = () => {
   return (

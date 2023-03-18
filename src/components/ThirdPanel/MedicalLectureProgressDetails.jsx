@@ -1,5 +1,5 @@
 import React from "react";
-import { medicalLecturesProgress } from "../data/thirdPanel";
+import { medicalLecturesProgress } from "../../data/thirdPanel";
 
 const MedicalLectureProgressDetails = () => {
   return (
