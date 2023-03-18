@@ -7,16 +7,20 @@ import { FiLogOut, FiMoreHorizontal } from "react-icons/fi";
 import ResourcesDetails from "./ResourcesDetails";
 import SideBar from "./SideBar";
 import Button from "./Button";
-import {
-  handleBackgroundChange,
-  handleButtonClick,
-} from "../utils/ButtonHandler";
+import useNavBar from "../hooks/useNavBar";
 
 const FirstPanel = () => {
   const [showSideBar, setShowSideBar] = useState(false);
-  const [focus, setFocus] = useState("dashboard");
-  const [showResources, setShowResources] = useState(false);
   const [heading, setHeading] = useState("XXXXXXXX");
+
+  const {
+    focus,
+    setFocus,
+    showResources,
+    setShowResources,
+    handleBackgroundChange,
+    handleButtonClick,
+  } = useNavBar();
 
   useEffect(() => {
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",

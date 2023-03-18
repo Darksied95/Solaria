@@ -25,7 +25,7 @@ const SideBar = ({ showSideBar, closeSideBar }) => {
 
   return (
     <div
-      className={`bg-white fixed inset-0 z-10 flex flex-col items-center px-12 gap-8 transition-all ${
+      className={`bg-white fixed inset-0 z-10 flex flex-col items-center px-12 gap-8 transition-all lg:hidden ${
         !showSideBar && "left-full"
       } `}
     >
